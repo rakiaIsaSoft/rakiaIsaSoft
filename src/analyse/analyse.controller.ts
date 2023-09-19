@@ -33,4 +33,21 @@ export class AnalyseController {
   remove(@Param('id') id: string) {
     return this.analyseService.removeAnalyse(+id);
   }
+
+
+@Get("/ListAnalyseGam")
+
+ResponseEntity<list> ListAnalyseGam( ){
+List p = this.analyseService.ListAnalyseGam();
+if(p == null)
+{ 
+return this.ResponseEntity.notFound().build();
+}
+return this.ResponseEntity.ok().body(p);	
+}
+
+
+
+
+
 }

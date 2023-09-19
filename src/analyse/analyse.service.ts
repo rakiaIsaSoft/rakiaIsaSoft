@@ -77,4 +77,13 @@ export class AnalyseService {
   removeAnalyse(id: number): Promise<{ affected?: number }> {
     return this.analyseRepository.delete(id);
   }
+
+
+  
+ ListAnalyseGam(id: number): Promise<Analyse>  {
+  
+    return this.analyseRepository.ListAnalyseGam(id);
+  }
+
+
 }

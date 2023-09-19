@@ -51,7 +51,6 @@ export class GammeService {
     return this.gammeRepository.save(gamme);
   }
 
-
 /////////////////
 
   /* async addanalyseToGamme(createGammeDto: CreateGammeDto , gammeId: number, analyseId: number ): Promise<void> {
@@ -120,4 +119,8 @@ export class GammeService {
   removeGamme(id: number): Promise<{ affected?: number }> {
     return this.gammeRepository.delete(id);
   }
+
+
+
+
 }

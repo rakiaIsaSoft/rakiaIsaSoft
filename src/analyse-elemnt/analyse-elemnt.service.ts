@@ -21,8 +21,10 @@ export class AnalyseElemntService {
 
   
   async saveAnalyseElemnt(analyseId: number, elemntId: number): Promise<AnalyseElemnt> {
-    // Find the gamme and analyse by their IDs
+    // Find the elemnt and analyse by their IDs
     console.log(analyseId);
+    console.log(elemntId);
+    
     
     const analyse = await this.analyseRepository
       .createQueryBuilder('analyse')
